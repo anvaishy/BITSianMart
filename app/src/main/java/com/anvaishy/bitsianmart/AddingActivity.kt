@@ -11,6 +11,7 @@ import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.storage.FirebaseStorage
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -60,9 +61,14 @@ class AddingActivity : AppCompatActivity() {
         val formatter = SimpleDateFormat("yyyy_MM__dd__HH__mm__ss", Locale.getDefault())
         val now = Date()
         val fileName=formatter.format(now).toString()
+        val storagereference = FirebaseStorage.getInstance().getReference(fileName)
+        storagereference.putFile(img).addOnSuccessListener{
+
+
+        }
         database=FirebaseDatabase.getInstance().getReference("products")
 
-        url=img.toString()
+        url=fileName
         product=pname.text.toString()
         price=pprice.text.toString()
         tag=ptag.text.toString()
