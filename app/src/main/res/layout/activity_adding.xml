@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/backer"
+    tools:context=".AddingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:textSize="56dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:id="@+id/dispimg"
+            ></ImageView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select Image"
+            android:backgroundTint="@color/purple_500"
+            android:id="@+id/addimage"
+            android:layout_margin="15dp"
+            ></Button>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="30"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:hint="Product Name"
+            android:id="@+id/Pname"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="30"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:hint="Product Price in INR"
+            android:id="@+id/Pprice"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="30"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:hint="Product Tag"
+            android:id="@+id/Ptag"
+            ></EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Product"
+            android:backgroundTint="@color/purple_500"
+            android:id="@+id/addData"
+            android:layout_margin="15dp"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="back"
+            android:backgroundTint="@color/purple_500"
+            android:id="@+id/back"
+            android:layout_margin="15dp"
+            ></Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
